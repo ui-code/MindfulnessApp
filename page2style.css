@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Quicksand';
+    background-color: #ffece3;
+}
+
+.container {
+    width: 350px;
+    height: 730px;
+    border-radius: 40px;
+    overflow: hidden;
+   /*  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1); */
+}
+
+.bg-col-1 {
+    background-color: #ffccb4;
+}
+
+div.middle {
+    background-color: white;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.white-color {
+    color: white;
+}
+
+.bg-col-2 {
+    background-color: #4f3c74;
+}
+
+.fa {
+    font-size: 1.4em;
+}
+
+circle.circle-track {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 1px;
+}
+
+circle.circle-progress {
+    fill: #fff;
+    stroke: #4f3c74;
+    stroke-width: 2px;
+    stroke-dasharray: 880;
+    stroke-dashoffset: 660;
+}
+
+circle.pointer {
+    fill: #4f3c74;
+    transform-origin: center;
+    transform: rotate(90deg) translate(90px);
+}
+
+span.small {
+    font-size: 12px;
+}
+
+span.big {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.color-1 {
+    color: #4f3c74;
+}
+
+div.pause {
+    background-color: #feb28e;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.light-grey {
+    color: #e1dfeb;
+}
+
+.font-small {
+    font-size: 0.8em;
+}
+
+.track {
+    height: 2px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background-color: #4f3c74;
+}
+
+.track::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: lightgray;
+    right: 0;
+    left: 25%;
+}
+
+.track::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #4f3c74;
+    top: -5px;
+    right: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    left: 25%;
+}
+
+.active {
+    color: white;
+}
+
+.inactive {
+    color: #a69ab7;
+}
+
+.music {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 1.2em;
+    text-shadow: -4px 0 #4f3c75, -3px 0 #4f3c75, -2px 0 #4f3c75,
+    -1px 0 #4f3c75, 0px 3px #4f3c75, -3px 3px #4f3c75, -2px 3px #4f3c75,
+    -1px 3px #4f3c75;
+}
